@@ -1,0 +1,24 @@
+/* Protooly base styles — clean modern SaaS */
+.App { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+[dir='rtl'] .flip-rtl { transform: scaleX(-1); }
+
+.gradient-soft { background: linear-gradient(180deg, #eef2ff 0%, #ffffff 60%); }
+.gradient-cta { background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%); }
+
+.tool-card { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+.tool-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px -10px rgba(79, 70, 229, 0.18); border-color: #c7d2fe; }
+
+.icon-wrap { transition: background-color .18s ease, color .18s ease; }
+.tool-card:hover .icon-wrap { background-color: #4f46e5; color: white; }
+
+.scrollbar-thin::-webkit-scrollbar { height: 6px; width: 6px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+
+.fade-in { animation: fadeUp .5s ease both; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(10px);} to {opacity:1; transform: translateY(0);} }
+
+.bg-grid {
+  background-image: linear-gradient(rgba(99,102,241,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(99,102,241,0.07) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
